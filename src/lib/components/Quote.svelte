@@ -2,8 +2,8 @@
     import { Card, CardHeader, CardTitle, CardContent } from "$lib/components/ui/card";
 
 
-    import { Quote } from '$lib/stores/quoteStore';
-    export let quote = Quote;
+    import type { Quote } from '$lib/stores/quoteStore';
+    export let quote: Quote;
   </script>
   
   <Card class="max-w-lg mx-auto mt-10">
