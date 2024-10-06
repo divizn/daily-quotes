@@ -1,8 +1,12 @@
 <script lang="ts">
+	import quoteStore, { type Quote as TQuote } from '$lib/stores/quoteStore';
     import Quote from '$lib/components/Quote.svelte';
-	import quoteStore from '$lib/stores/quoteStore';
 
-    let quote = $quoteStore[0];
+    let quote: TQuote;
+    if ($quoteStore){
+        quote = $quoteStore;
+    }
+
 </script>
 
 <main class="flex-grow flex items-center justify-center">
