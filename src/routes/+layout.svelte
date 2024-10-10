@@ -4,8 +4,11 @@
 	import { ModeWatcher } from 'mode-watcher';
 	import { dev } from '$app/environment';
 	import { inject } from '@vercel/analytics';
+	import { onMount } from 'svelte';
 
-	inject({ mode: dev ? 'development' : 'production' });
+	onMount(() => {
+		inject({ mode: dev ? 'development' : 'production' });
+	});
 </script>
 
 <div class="flex flex-col min-h-screen">
