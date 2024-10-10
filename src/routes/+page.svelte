@@ -5,6 +5,11 @@
     let quote = data
 </script>
 
+<svelte:head>
+    <title>Quote by {quote.author}</title>
+    <meta name="description" content="{quote.text} - {quote.author}" />
+</svelte:head>
+
 <main class="flex-grow flex items-center justify-center">
     <Quote {quote}/>
 </main>
