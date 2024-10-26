@@ -1,38 +1,22 @@
-# create-svelte
+# Daily Quotes
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+A SvelteKit project that displays a random quote. This app was built to learn data fetching, stores in SvelteKit, and UI styling with Shadcn.
 
-## Creating a project
+## Why I Made This
 
-If you're seeing this, you've probably already done this step. Congrats!
+Daily Quotes is a practice project to explore SvelteKit's data fetching and state management using stores, as well as to experiment with Shadcn for custom UI design.
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+## TODO
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+- [ ] Cache quote to display only one a day
+- [ ] Nicer UI
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+## Running Locally
+  ```bash
+  git clone https://github.com/yourusername/daily-quotes.git # clones the repository
+  cd daily-quotes # change directory
+  npm install # installs dependencies
+  npm run dev # run development server
+  ```
+  Then go to `localhost:5173` to see the application
+  
