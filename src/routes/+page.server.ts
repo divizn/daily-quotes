@@ -23,11 +23,11 @@ export async function load({ fetch }) {
     const data = await res.json();
     quote = {id: data._id, text: data.content, author: data.author};
     console.log("Quote fetched from API: ", quote);
-    return quote as Quote;
+    return quote;
   }
   catch (err) {
     console.log("Error fetching quote from API: ", err);
     quote = Dquote;
-    return quote as Quote;
+    return quote;
   }
 }
