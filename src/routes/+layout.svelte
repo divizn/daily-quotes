@@ -1,11 +1,15 @@
 <script lang="ts">
 	import '../app.css';
-	import Header from '$lib/components/ui/Header.svelte';
-	import { ModeWatcher } from 'mode-watcher';
+	import Nav from '$lib/components/Nav.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+
+	let { children } = $props();
 </script>
 
-<div class="flex min-h-screen flex-col">
-	<ModeWatcher />
-	<Header />
-	<slot />
+<div class="text-foreground flex min-h-screen flex-col antialiased">
+	<Nav />
+	<div class="flex-1">
+		{@render children()}
+	</div>
+	<Footer />
 </div>

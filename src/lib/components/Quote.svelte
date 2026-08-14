@@ -1,18 +1,11 @@
 <script lang="ts">
-	import { Card, CardContent } from '$lib/components/ui/card';
-
-	export let quote;
+	let { text, author, date }: { text: string; author: string; date: string } = $props();
 </script>
 
-<Card class="-mt-2 h-max border-0 sm:mx-auto sm:mt-10 sm:w-4/5">
-	<CardContent class="space-y-4">
-		<blockquote
-			class="bg-gradient-to-t from-purple-500 to-blue-600 bg-clip-text p-3 text-3xl font-semibold italic text-transparent dark:from-blue-400 dark:to-purple-600 sm:text-6xl"
-		>
-			"{quote.text}"
-		</blockquote>
-		<p class="text-right font-mono text-lg text-zinc-700 dark:text-white sm:text-xl">
-			- {quote.author}
-		</p>
-	</CardContent>
-</Card>
+<div class="animate-fade-in w-full">
+	<p class="text-muted-foreground text-xs tracking-widest uppercase">{date}</p>
+	<blockquote class="font-display animate-title-glow text-foreground mt-6 text-3xl sm:text-5xl">
+		"{text}"
+	</blockquote>
+	<p class="text-muted-foreground mt-6 text-right font-mono text-sm">- {author}</p>
+</div>

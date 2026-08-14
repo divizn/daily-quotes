@@ -1,15 +1,19 @@
 <script lang="ts">
+	import Particles from '$lib/components/Particles.svelte';
 	import Quote from '$lib/components/Quote.svelte';
 
-	export let data;
-	let quote = data;
+	let { data } = $props();
 </script>
 
 <svelte:head>
-	<title>Quote by {quote.author}</title>
-	<meta name="description" content="{quote.text} - {quote.author}" />
+	<title>Quote by {data.author}</title>
+	<meta name="description" content="{data.text} - {data.author}" />
 </svelte:head>
 
-<main class="flex flex-grow items-center sm:justify-center">
-	<Quote {quote} />
-</main>
+<div class="relative flex min-h-[70vh] items-center">
+	<Particles class="animate-fade-in pointer-events-none absolute inset-0" quantity={80} />
+
+	<main class="relative mx-auto w-full max-w-4xl px-6 py-24">
+		<Quote text={data.text} author={data.author} date={data.date} />
+	</main>
+</div>

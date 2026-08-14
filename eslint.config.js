@@ -7,9 +7,9 @@ import tseslint from 'typescript-eslint';
 export default tseslint.config(
 	eslint.configs.recommended,
 	...tseslint.configs.recommended,
-	...svelte.configs['flat/recommended'],
+	...svelte.configs.recommended,
 	prettier,
-	...svelte.configs['flat/prettier'],
+	...svelte.configs.prettier,
 	{
 		languageOptions: {
 			globals: {
@@ -24,12 +24,6 @@ export default tseslint.config(
 			parserOptions: {
 				parser: tseslint.parser
 			}
-		},
-		rules: {
-			'@typescript-eslint/no-unused-vars': [
-				'error',
-				{ varsIgnorePattern: '^\\$\\$(Props|Events|Slots|Generic)$' }
-			]
 		}
 	},
 	{
