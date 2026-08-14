@@ -1,5 +1,8 @@
 # Daily Quotes
 
+[![Vercel](https://img.shields.io/github/deployments/divizn/daily-quotes/Production?label=vercel&logo=vercel&logoColor=white)](https://quotes.phons.dev)
+[![SvelteKit](https://img.shields.io/badge/built%20with-SvelteKit-FF3E00?logo=svelte&logoColor=white)](https://kit.svelte.dev)
+
 A SvelteKit project that displays a random quote. This app was built to learn data fetching in SvelteKit, and UI styling with Shadcn.
 
 ## Why I Made This
