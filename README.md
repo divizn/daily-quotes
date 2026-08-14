@@ -1,10 +1,10 @@
 # Daily Quotes
 
-A SvelteKit project that displays a random quote. This app was built to learn data fetching, stores in SvelteKit, and UI styling with Shadcn.
+A SvelteKit project that displays a random quote. This app was built to learn data fetching in SvelteKit, and UI styling with Shadcn.
 
 ## Why I Made This
 
-Daily Quotes is a practice project to explore SvelteKit's data fetching and state management using stores, as well as to experiment with Shadcn for custom UI design.
+Daily Quotes is a practice project to explore SvelteKit's data fetching using a server side load function, as well as to experiment with Shadcn for custom UI design. It started out with a store as an in memory db, which was swapped for an API later on.
 
 ## TODO
 
@@ -12,11 +12,15 @@ Daily Quotes is a practice project to explore SvelteKit's data fetching and stat
 - [ ] Nicer UI
 
 ## Running Locally
-  ```bash
-  git clone https://github.com/yourusername/daily-quotes.git # clones the repository
-  cd daily-quotes # change directory
-  npm install # installs dependencies
-  npm run dev # run development server
-  ```
-  Then go to `localhost:5173` to see the application
-  
+
+```bash
+git clone https://github.com/divizn/daily-quotes.git # clones the repository
+cd daily-quotes # change directory
+echo 'QUOTE_API = "http://api.quotable.io/random?tags=wisdom"' > .env # sets the quote api
+pnpm install # installs dependencies
+pnpm dev # run development server
+```
+
+Then go to `localhost:5173` to see the application
+
+Without a `.env` the page still works, it just falls back to one hardcoded quote every time.
