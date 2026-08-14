@@ -4,8 +4,8 @@
 	import { ModeWatcher } from 'mode-watcher';
 </script>
 
-<div class="flex flex-col min-h-screen">
+<div class="flex min-h-screen flex-col">
 	<ModeWatcher />
 	<Header />
 	<slot />
-  </div>
+</div>
