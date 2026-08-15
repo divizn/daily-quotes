@@ -11,6 +11,9 @@ importers:
       '@fontsource-variable/inter':
         specifier: ^5.3.0
         version: 5.3.0
+      '@ph0n/theme-kit':
+        specifier: file:../../../theme-kit
+        version: file:../../../theme-kit
       '@upstash/redis':
         specifier: ^1.38.2
         version: 1.38.2
@@ -162,6 +165,9 @@ packages:
 
   '@oxc-project/types@0.144.0':
     resolution: {integrity: sha512-nuhZIOLuI6TFQ32I/WnUx+SCPY7SdSKwgnFHydAuoS1+Z4BRcaP+RRJmGzl9lw+0OFF7UmaESf7KQRXaNLHypg==}
+
+  '@ph0n/theme-kit@file:../../../theme-kit':
+    resolution: {directory: ../../../theme-kit, type: directory}
 
   '@polka/url@1.0.0-next.28':
     resolution: {integrity: sha512-8LduaNlMZGwdZ6qWrKlfa+2M4gahzFkprZiAt2TF8uS0qQgBizKXpXURqvTJ4WtmupWxaLqjRb2UCTe72mu+Aw==}
@@ -1422,6 +1428,8 @@ snapshots:
       '@jridgewell/sourcemap-codec': 1.5.0
 
   '@oxc-project/types@0.144.0': {}
+
+  '@ph0n/theme-kit@file:../../../theme-kit': {}
 
   '@polka/url@1.0.0-next.28': {}
 
