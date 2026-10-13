@@ -1,6 +1,6 @@
 # Daily Quotes
 
-[![Vercel](https://img.shields.io/github/deployments/divizn/daily-quotes/Production?label=vercel&logo=vercel&logoColor=white)](https://quotes.phons.dev)
+[![Cloudflare Workers](https://img.shields.io/badge/deployed%20on-Cloudflare%20Workers-F38020?logo=cloudflare&logoColor=white)](https://quotes.phons.dev)
 [![SvelteKit](https://img.shields.io/badge/built%20with-SvelteKit-FF3E00?logo=svelte&logoColor=white)](https://kit.svelte.dev)
 
 A SvelteKit project that displays one quote a day. This app was built to learn data fetching in SvelteKit.
