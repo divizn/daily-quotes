@@ -1,17 +1,3 @@
 @import 'tailwindcss';
 @import '@ph0n/theme-kit';
 @import '@fontsource-variable/inter';
-
-body {
-	background-color: var(--color-background);
-	color: var(--color-foreground);
-	font-family: var(--font-sans);
-}
-
-*,
-*::before,
-*::after {
-	transition-property: background-color, border-color, color, fill, stroke;
-	transition-timing-function: ease;
-	transition-duration: 200ms;
-}
