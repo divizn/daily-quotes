@@ -1,4 +1,0 @@
-packages:
-  - '.'
-minimumReleaseAgeExclude:
-  - '@ph0n/theme-kit'
