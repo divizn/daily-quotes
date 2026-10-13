@@ -2,5 +2,6 @@ packages:
   - '.'
 allowBuilds:
   esbuild: true
+  workerd: true
 minimumReleaseAgeExclude:
   - '@ph0n/theme-kit'
